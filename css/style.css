@@ -1,0 +1,143 @@
+body {
+	background: url(bg.jpg) no-repeat fixed;
+	background-size: cover;
+}
+
+
+				/**----------Mainlinks---------**/
+
+
+
+ul.mainlinks {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	margin: 0;
+	min-width: 102%;
+	padding-left: 0;
+	background: -moz-linear-gradient(top,rgb(30,41,51),rgb(30,40,48));
+	box-shadow: 0 0 1px 1px #111;
+	z-index: 1000;
+}
+ul.mainlinks li {
+	display: inline-block;
+	list-style: none;
+	letter-spacing: 2px;
+	min-width: 13%;
+	height: 100%;
+	width: 168.3px;
+	margin-left: -3px;
+	border-top: 3px solid transparent;
+	border-left: 1px solid #333;
+	border-right: 1px solid #222;
+	padding: 10px 0 10px 0;
+	text-align: center;
+}
+ul.mainlinks a {
+	text-decoration: none;
+	color: #999;
+	font-family: arial;
+	text-shadow: 0 0 2px #999;
+}
+ul.mainlinks a:hover {
+	color: rgb(0,270,270);
+}
+ul.mainlinks a.selected li{
+	border-bottom: 1px solid rgb(0,270,0);
+}
+ul.mainlinks a:hover > li:before {
+	content: url(arrow.png);
+	position: absolute;
+	top: 0;
+	margin-left: 20px;
+}
+
+
+				/**----------End of Mainlinks---------**/
+
+				
+				/**-----------MainBody----------**/
+
+
+div.mainbody {
+	width: 96.1%;
+	color: silver;
+	padding: 3px 10px 3px 10px;
+	position: absolute;
+	top: 15%;
+	left: 10px;
+	margin: 0;
+}
+div.mainbody div {
+	background: rgba(0,0,0,0.8);
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 10px;
+	font-family: arial;
+	font-size: 15px;
+}
+
+
+				/**-----------End of MainBody----------**/
+
+
+				/**-----------Footer-----------**/
+
+
+footer {
+	
+}
+				/**-----------End of Footer-----------**/
+				
+				
+				
+				/**-----------Lyric-----------**/
+				
+				
+div.mainbody iframe.lyric_shower {
+	display: block;
+	width: 48%;
+	margin-left: 50px;
+	border: 13px solid rgba(0,0,0,0.1);
+	box-shadow: 0 0 5px 1px #000;
+	height: 380px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	background: rgba(270,270,270,0.7);
+	border-radius: 5px;
+}
+div.mainbody ul.lyric_title {
+	position: absolute;
+	right: 15%;
+	top: 0;
+	padding: 0;
+	width: 240px;
+	margin: 0;
+	height: 400px;
+	background: rgba(0,0,0,0.8);
+	overflow-y: auto;
+	border: 5px solid rgba(0,0,0,0.2);
+	border-radius: 5px;
+	box-shadow: 0 0 10px 1px #000;
+}
+div.mainbody ul.lyric_title li {
+	list-style: none;
+	color: #aaa;
+	text-align: center;
+	padding: 3px;
+	cursor: pointer;
+}
+div.mainbody ul.lyric_title li.album_name {
+	color: red;
+	font-family: arial;
+}
+div.mainbody ul.lyric_title li.album_name:hover {
+	background: transparent;
+	cursor: default;
+}
+div.mainbody ul.lyric_title li:hover {
+	background: rgba(0,0,0,0.7);
+}
+
+				/*------------End of Lyric-----------**/
